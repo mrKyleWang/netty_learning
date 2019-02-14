@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 每隔60秒扫描下文件 -->
+<configuration status="OFF" monitorInterval="60">
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+					pattern="%d{yyyyMMdd HH:mm:ss.SSS} |%p| |%X{X-B3-TraceId}| |%T| |%c{1}.%L| |%M| | %m%n"/>
+		</Console>
+	</appenders>
+	<loggers>
+		<root level="debug">
+			<appender-ref ref="Console"/>
+		</root>
+	</loggers>
+</configuration> 
