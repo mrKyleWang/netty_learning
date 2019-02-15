@@ -19,7 +19,7 @@ public class TestServer {
 
 	private static final Logger logger = LoggerFactory.getLogger(TestServer.class);
 
-	private static final int PORT = 9999;
+	private static final int PORT = 8888;
 
 	public static void main(String[] args) {
 		EventLoopGroup bossGroup = new NioEventLoopGroup();
