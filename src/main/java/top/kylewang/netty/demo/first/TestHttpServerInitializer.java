@@ -12,9 +12,9 @@ import org.slf4j.LoggerFactory;
  * @version 1.0
  * @date 2019年02月14日
  */
-public class TestServerInitializer extends ChannelInitializer<SocketChannel> {
+public class TestHttpServerInitializer extends ChannelInitializer<SocketChannel> {
 
-	private static final Logger logger = LoggerFactory.getLogger(TestServerInitializer.class);
+	private static final Logger logger = LoggerFactory.getLogger(TestHttpServerInitializer.class);
 
 	@Override
 	protected void initChannel(SocketChannel ch) throws Exception {

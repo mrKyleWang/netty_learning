@@ -17,7 +17,7 @@ import io.netty.util.CharsetUtil;
  */
 public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
 
-	private static final Logger logger = LoggerFactory.getLogger(TestServer.class);
+	private static final Logger logger = LoggerFactory.getLogger(TestHttpServer.class);
 
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, HttpObject msg) throws Exception {

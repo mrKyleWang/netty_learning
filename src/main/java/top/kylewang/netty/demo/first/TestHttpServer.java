@@ -9,17 +9,17 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
+import static top.kylewang.netty.demo.CommonConstant.PORT;
+
 /**
- * TestServer
+ * TestHttpServer
  * @author KyleWang
  * @version 1.0
  * @date 2019年02月14日
  */
-public class TestServer {
+public class TestHttpServer {
 
-	private static final Logger logger = LoggerFactory.getLogger(TestServer.class);
-
-	private static final int PORT = 8888;
+	private static final Logger logger = LoggerFactory.getLogger(TestHttpServer.class);
 
 	public static void main(String[] args) {
 		EventLoopGroup bossGroup = new NioEventLoopGroup();
@@ -27,7 +27,7 @@ public class TestServer {
 		try {
 			ServerBootstrap serverBootstrap = new ServerBootstrap();
 			serverBootstrap.group(bossGroup, workerGroup).channel(NioServerSocketChannel.class)
-					.childHandler(new TestServerInitializer());
+					.childHandler(new TestHttpServerInitializer());
 			ChannelFuture channelFuture = serverBootstrap.bind(PORT).sync();
 			logger.debug("server start,port = {}", PORT);
 			channelFuture.channel().closeFuture().sync();
