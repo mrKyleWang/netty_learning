@@ -1,14 +1,14 @@
 package top.kylewang.netty.imooc.ch12.connection;
 
-import static com.imooc.netty.ch12.connection.Constant.BEGIN_PORT;
-import static com.imooc.netty.ch12.connection.Constant.N_PORT;
-
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+
+import static top.kylewang.netty.imooc.ch12.connection.Constant.BEGIN_PORT;
+import static top.kylewang.netty.imooc.ch12.connection.Constant.N_PORT;
 
 /**
  * @author 闪电侠

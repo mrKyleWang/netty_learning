@@ -1,6 +1,6 @@
 package top.kylewang.netty.imooc.ch6.exceptionspread;
 
-import com.imooc.netty.ch6.BusinessException;
+import top.kylewang.netty.imooc.ch6.BusinessException;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

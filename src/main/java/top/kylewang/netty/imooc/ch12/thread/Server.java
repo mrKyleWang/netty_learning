@@ -1,6 +1,6 @@
 package top.kylewang.netty.imooc.ch12.thread;
 
-import static com.imooc.netty.ch12.thread.Constant.PORT;
+import static top.kylewang.netty.imooc.ch12.thread.Constant.PORT;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFutureListener;

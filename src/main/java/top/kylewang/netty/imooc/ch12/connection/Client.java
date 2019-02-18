@@ -1,13 +1,13 @@
 package top.kylewang.netty.imooc.ch12.connection;
 
-import static com.imooc.netty.ch12.connection.Constant.BEGIN_PORT;
-import static com.imooc.netty.ch12.connection.Constant.N_PORT;
-
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+
+import static top.kylewang.netty.imooc.ch12.connection.Constant.BEGIN_PORT;
+import static top.kylewang.netty.imooc.ch12.connection.Constant.N_PORT;
 
 public class Client {
 

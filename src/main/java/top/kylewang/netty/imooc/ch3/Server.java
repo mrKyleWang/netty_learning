@@ -1,6 +1,6 @@
 package top.kylewang.netty.imooc.ch3;
 
-import com.imooc.netty.ch6.AuthHandler;
+import top.kylewang.netty.imooc.ch6.AuthHandler;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

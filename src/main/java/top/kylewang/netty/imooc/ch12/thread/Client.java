@@ -1,7 +1,5 @@
 package top.kylewang.netty.imooc.ch12.thread;
 
-import static com.imooc.netty.ch12.thread.Constant.PORT;
-
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
@@ -10,6 +8,8 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.FixedLengthFrameDecoder;
+
+import static top.kylewang.netty.imooc.ch12.thread.Constant.PORT;
 
 public class Client {
 
